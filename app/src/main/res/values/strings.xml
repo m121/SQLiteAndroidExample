@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">ExampleLocalDataBase</string>
+
+
+    <string name="product_name">Name</string>
+    <string name="product_price">Price</string>
+    <string name="product_count">Count</string>
+    <string name="product_savebtn">Save</string>
+    <string name="product_addproductbtn">Add Product</string>
+
+</resources>
