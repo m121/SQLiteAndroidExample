@@ -1,9 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.perez.mateo.examplelocaldatabase.ListActivity">
 
-</android.support.constraint.ConstraintLayout>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="440dp"
+        android:id="@+id/listView_activitylist_listproducts"
+        tools:layout_editor_absoluteY="0dp"
+        tools:layout_editor_absoluteX="8dp" />
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent"
+        android:text="@string/product_addproductbtn"
+        android:id="@+id/button_activitylist_addproductsbtn"
+        android:layout_below="@+id/listView_activitylist_listproducts"
+        android:layout_centerHorizontal="true" />
+
+
+
+
+</RelativeLayout>

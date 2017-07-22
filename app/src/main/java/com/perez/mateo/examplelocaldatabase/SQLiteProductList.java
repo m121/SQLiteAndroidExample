@@ -34,7 +34,7 @@ public class SQLiteProductList extends SQLiteOpenHelper {
                 PRODUCT_COLUMN_PIC + " TEXT, " +
                 PRODUCT_COLUMN_NAME + " TEXT, " +
                 PRODUCT_COLUMN_PRICE + " TEXT, " +
-                PRODUCT_COLUMN_IDPRODUCT + " TEXT, " +")");
+                PRODUCT_COLUMN_IDPRODUCT + " TEXT " +")");
 
     }
 

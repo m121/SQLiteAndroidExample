@@ -17,6 +17,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.Toast;
 
 import java.io.ByteArrayOutputStream;
 
@@ -84,6 +85,8 @@ public class AddProductActivity extends AppCompatActivity implements View.OnClic
         values.put(SQLiteProductList.PRODUCT_COLUMN_NAME, product.getNameproduct());
         values.put(SQLiteProductList.PRODUCT_COLUMN_PRICE, product.getPriceproduct());
         database.insert(SQLiteProductList.BASE_TABLE_NAME, null, values);
+
+        Toast.makeText(this,"Saved!",Toast.LENGTH_LONG).show();
 
 
     }
