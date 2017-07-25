@@ -31,6 +31,7 @@ public class AddProductActivity extends AppCompatActivity implements View.OnClic
     private Button button_save;
 
 
+
     public static final int IMAGEREQUESTCODE = 45535;
     Intent galleryIntent;
     Bitmap pic;
@@ -87,6 +88,8 @@ public class AddProductActivity extends AppCompatActivity implements View.OnClic
         database.insert(SQLiteProductList.BASE_TABLE_NAME, null, values);
 
         Toast.makeText(this,"Saved!",Toast.LENGTH_LONG).show();
+        Intent intent = new Intent(AddProductActivity.this,ListActivity.class);
+        startActivity(intent);
 
 
     }

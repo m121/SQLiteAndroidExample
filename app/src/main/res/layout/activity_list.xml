@@ -7,6 +7,16 @@
     tools:context="com.perez.mateo.examplelocaldatabase.ListActivity">
 
 
+
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/SwipeRefresh_activitylist_refreshlist"
+        android:layout_width="match_parent"
+        android:layout_height="440dp">
+
+
+
     <ListView
         android:layout_width="match_parent"
         android:layout_height="440dp"
@@ -15,14 +25,18 @@
         tools:layout_editor_absoluteX="8dp" />
 
 
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/colorAccent"
         android:text="@string/product_addproductbtn"
         android:id="@+id/button_activitylist_addproductsbtn"
-        android:layout_below="@+id/listView_activitylist_listproducts"
+        android:layout_below="@+id/SwipeRefresh_activitylist_refreshlist"
         android:layout_centerHorizontal="true" />
+
 
 
 
